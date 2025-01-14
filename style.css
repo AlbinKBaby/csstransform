@@ -139,8 +139,10 @@ footer a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    header h1 {
-        font-size: 1.8rem;
+    header  {
+        /display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     h3 {
@@ -153,8 +155,10 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 
-    header h1 {
-        font-size: 1.5rem;
+    header  {
+        display: flex;
+       justify-content: center;
+       align-items: center;
     }
 
     h3 {
