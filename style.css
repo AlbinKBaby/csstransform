@@ -11,14 +11,27 @@ body {
 header {
     text-align: center;
     padding: 2rem;
-    background-color: #282c34;
-    color: white;
+    background-color: #1d2b49;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    display: flex;      
+    justify-content: space-between;
+    margin: 20px 0px;
 }
 
 header h1 {
     margin-bottom: 0.5rem;
 }
 
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+}
 .container1 {
     padding: 2rem;
     align-items: center;
@@ -26,7 +39,9 @@ header h1 {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
-
+#line1,#line2,#line3,#lin4{
+    
+}
 h3 {
     text-align: center;
     font-size: 1.8rem;
@@ -62,20 +77,14 @@ h3 {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #282c34;
+    background-color: #000000;
     color: white;
     margin-top: 2rem;
-}
-
-footer a {
-    color: #61dafb;
-    text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
-
 
 .scale:hover {
     transform: scale(1.2);
@@ -116,19 +125,9 @@ footer a:hover {
 .brightness:hover {
     filter: brightness(1.5);
 }
-
-.shadow:hover {
-    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
-}
-
 .contrast:hover {
     filter: contrast(200%);
 }
-
-.hue-rotate:hover {
-    filter: hue-rotate(90deg);
-}
-
 .invert:hover {
     filter: invert(100%);
 }
@@ -136,7 +135,7 @@ footer a:hover {
 
 
 @media (max-width: 768px) {
-    .container1, .container2 {
+    .container1{
         grid-template-columns: repeat(2, 1fr);
     }
 
