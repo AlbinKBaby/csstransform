@@ -1,0 +1,168 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #282c34;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.container1 {
+    padding: 2rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.effect-name {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.gallery-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #282c34;
+    color: white;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.scale:hover {
+    transform: scale(1.2);
+}
+
+.rotate:hover {
+    transform: rotate(15deg);
+}
+
+.skew:hover {
+    transform: skew(10deg, 10deg);
+}
+
+.translate:hover {
+    transform: translate(20px, 20px);
+}
+
+.rotate3d:hover {
+    transform: rotate3d(1, 1, 0, 45deg);
+}
+
+.scale3d:hover {
+    transform: scale3d(1.5, 1.5, 1.5);
+}
+
+.perspective:hover {
+    transform: perspective(500px) rotateX(20deg);
+}
+
+.flip-effect:hover {
+    transform: rotateY(180deg);
+}
+
+.blur:hover {
+    filter: blur(5px);
+}
+
+.brightness:hover {
+    filter: brightness(1.5);
+}
+
+.shadow:hover {
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
+}
+
+.contrast:hover {
+    filter: contrast(200%);
+}
+
+.hue-rotate:hover {
+    filter: hue-rotate(90deg);
+}
+
+.invert:hover {
+    filter: invert(100%);
+}
+
+
+
+@media (max-width: 768px) {
+    .container1, .container2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container1{
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .gallery-item {
+        margin: 0.5rem;
+    }
+}
